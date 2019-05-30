@@ -14,7 +14,8 @@ Character.propTypes = {
   character: PropTypes.shape({
     id: PropTypes.string.isRequired,
     photoUrl: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired,
+    affiliation: PropTypes.string
   }).isRequired
 };
 
