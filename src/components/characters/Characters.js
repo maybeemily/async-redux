@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Character from './Character';
+import styles from './Characters.css';
 
 function Characters({ characters }) {
   const characterList = characters.map(character => {
@@ -9,7 +10,7 @@ function Characters({ characters }) {
     </li>;
   });
   return (
-    <ul>
+    <ul className={styles.Characters}>
       {characterList}
     </ul>
   );
