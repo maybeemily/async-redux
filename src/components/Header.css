@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbdde0;
+  width: 100%;
+  margin: 0;
+  height: 15vw;
+  text-align: center;
+  margin-bottom: 3vw;
+
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    letter-spacing: .4rem;
+  }
+}
