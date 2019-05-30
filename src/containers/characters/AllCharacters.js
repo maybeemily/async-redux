@@ -1,11 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Characters from '../../components/characters/Characters';
-import { getCharacters } from '../../services/lastAirbenderApi';
-import { getCharactersLoading, getCharactersError } from '../../selectors/charactersSelectors';
+import { getCharacters, getCharactersLoading, getCharactersError } from '../../selectors/charactersSelectors';
 import { fetchCharacters } from '../../actions/charactersActions';
-import { connect } from 'http2';
-
+import { connect } from 'react-redux';
 
 class AllCharacters extends PureComponent {
   static propTypes = {
