@@ -2,7 +2,7 @@ import { fetchCharacters, FETCH_CHARACTERS_LOADING, FETCH_CHARACTERS, FETCH_CHAR
 
 jest.mock('../services/lastAirbenderApi.js');
 
-describe('character actions', () => {
+describe('characters actions', () => {
   it('it dispatches a loading action and a fetch characters action', () => {
     expect(fetchCharacters()).toEqual({
       type: FETCH_CHARACTERS,
