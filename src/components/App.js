@@ -1,7 +1,8 @@
 import React from 'react';
+import AllCharacters from '../containers/characters/AllCharacters';
 
 export default function App() {
   return (
-    <h1>Avatar List</h1>
+    <AllCharacters />
   );
 }
