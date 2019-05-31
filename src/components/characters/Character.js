@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Character({ character }) {
   return (
   <>
-  <p>{character.name}</p>
-  <img src={character.photoUrl}/>
+  <Link to={`/character/${character.id}`}>
+    <p>{character.name}</p>
+    <img src={character.photoUrl}/>
+  </Link>
   </>
   );
 }

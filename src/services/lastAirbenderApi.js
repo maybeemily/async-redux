@@ -22,7 +22,7 @@ export const getCharacter = id => {
     .then(json => ({
       id: json._id,
       name: json.name,
-      image: json.photoUrl,
-      position: json.position
+      photoUrl: json.photoUrl,
+      affiliation: json.affiliation
     }));
 };

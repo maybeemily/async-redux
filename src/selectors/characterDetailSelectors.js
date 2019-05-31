@@ -1,2 +1,2 @@
-export const getCharacter = state => state.characterDetail.character;
-export const getCharacterLoading = state => state.characterDetail.loading;
+export const getCharacter = state => state.character.character;
+export const getCharacterLoading = state => state.character.loading;

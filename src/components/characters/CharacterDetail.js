@@ -6,7 +6,7 @@ function CharacterDetail({ character }) {
     <section>
       <h2>Name: {character.name}</h2>
       <img src={character.photoUrl}/>
-      <p>Affiliation: {character.affliation}</p>
+      <p>Affiliation: {character.affiliation}</p>
     </section>
   );
 }

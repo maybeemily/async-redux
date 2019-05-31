@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CharacterDetail from '../../components/characters/CharacterDetail';
 import { getCharacter, getCharacterLoading } from '../../selectors/characterDetailSelectors';
-import fetchCharacter from '../../actions/characterDetailActions';
+import { fetchCharacter } from '../../actions/characterDetailActions';
 
 class CharacterById extends PureComponent {
   static propTypes = {
@@ -11,7 +11,7 @@ class CharacterById extends PureComponent {
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       photoUrl: PropTypes.string.isRequired,
-      position: PropTypes.string.isRequired
+      affiliation: PropTypes.string.isRequired
     }),
     loading: PropTypes.bool.isRequired,
     fetch: PropTypes.func.isRequired
