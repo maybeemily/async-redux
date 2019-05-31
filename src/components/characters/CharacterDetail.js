@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './CharacterDetail.css';
 
 function CharacterDetail({ character }) {
   return (
-    <section>
+    <section className={styles.CharacterDetail}>
       <h2>Name: {character.name}</h2>
       <img src={character.photoUrl}/>
       <p>Affiliation: {character.affiliation}</p>

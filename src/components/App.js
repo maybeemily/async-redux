@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <Header/>
       <Switch>
-        <Route path="/character/:id" component={CharacterById}/>
+        <Route path="/:id" component={CharacterById}/>
         <Route path="/" component={AllCharacters}/>
       </Switch>
     </Router>
